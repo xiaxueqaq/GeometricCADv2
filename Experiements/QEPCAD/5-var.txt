@@ -1,0 +1,11 @@
+[5-var]
+(x,y,z,u,w)
+5
+[ w^2 + ((x+y)^2 u - z y)>=0].
+proj-operator (h,h,h,h)
+go
+go
+go
+d-number-leaf-cells
+d-pscad ()
+finish

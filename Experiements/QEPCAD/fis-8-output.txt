@@ -1,0 +1,87 @@
+=======================================================
+                Quantifier Elimination                 
+                          in                           
+            Elementary Algebra and Geometry            
+                          by                           
+      Partial Cylindrical Algebraic Decomposition      
+                                                       
+      Version B 1.74, Thu Feb 25 14:48:53 EST 2021
+                                                       
+                          by                           
+                       Hoon Hong                       
+                  (hhong@math.ncsu.edu)                
+                                                       
+With contributions by: Christopher W. Brown, George E. 
+Collins, Mark J. Encarnacion, Jeremy R. Johnson        
+Werner Krandick, Richard Liska, Scott McCallum,        
+Nicolas Robidoux, and Stanly Steinberg                 
+=======================================================
+Enter an informal description  between '[' and ']':
+[fis-8]Enter a variable list:
+(x8,x9,x0,x1,x2,x3,x4,x5,x6,x7)Enter the number of free variables:
+10Enter a prenex formula:
+[x4 = 0 /\ x5 = 0 /\ x0 x8 + x1 x9 - 1 = 0 /\ 2 x0 x2 + 2 x1 x3 + 2 x4 x5 - x0 - x1 - x4 = 0 /\ x0 x6 + x0 x7 - x1 x7 - x4 x6 - x0 + x8 = 0 /\ x2 x6 + x2 x7 - x3 x7 - x5 x6 - x2 + x9 = 0 /\ 2 x0 x2 - 2 x0 x4 + 2 x1 x3 - 2 x1 x5 - x2^2 - x3^2 + x4^2 + x5^2 = 0 /\ x0^2 + x1^2 - x2^2 - x3^2 + x4^2 - x5^2 + x2 + x3 + x5 = 0 /\ 14 x9^3 + 2 x8^2 - 12 x8 x9 - 16 x9^2 + 4 x8 + 17 x9 - 10 = 0 /\ 14 x8 x9^2 - 3 x8^2 - 10 x8 x9 - 11 x9^2 + x8 + 20 x9 - 6 = 0 /\ 14 x8^2 x9 - 6 x8^2 - 20 x8 x9 + 20 x9^2 + 16 x8 - 9 x9 + 2 = 0 /\ 14 x8^3 - 19 x8^2 + 58 x8 x9 + 5 x9^2 - 17 x8 - 32 x9 + 46 = 0 /\ x2 /=0 /\ x3 /= 0 /\ x2 - x3 /=0].
+
+=======================================================
+
+Before Normalization >
+prop-eqn-const
+Before Normalization >
+go
+Before Projection (x7) >
+eqn-const-l (A_10,1)
+Before Projection (x7) >
+eqn-const-l (A_10,2)
+Before Projection (x7) >
+eqn-const-l (A_8,1)
+Before Projection (x7) >
+eqn-const-l (A_8,2)
+Before Projection (x7) >
+eqn-const-l (A_8,3)
+Before Projection (x7) >
+eqn-const-l (A_8,4)
+Before Projection (x7) >
+eqn-const-l (A_7,1)
+Before Projection (x7) >
+eqn-const-l (A_4,1)
+Before Projection (x7) >
+eqn-const-l (A_2,1)
+Before Projection (x7) >
+eqn-const-l (A_2,2)
+Before Projection (x7) >
+eqn-const-l (A_2,3)
+Before Projection (x7) >
+eqn-const-l (A_2,4)
+Before Projection (x7) >
+goWARNING! A projection factor is everywhere zero in the cylinder 
+over the cell (2,2,2,1) of positive dimension.  The McCallum projection 
+may not be valid.
+Warning! Some 5-level projection factor is acting as a 
+delineating polynomial for another!  CAD Simplification does not
+take this into account!
+WARNING! A projection factor is everywhere zero in the cylinder 
+over the cell (2,2,2,3) of positive dimension.  The McCallum projection 
+may not be valid.
+WARNING! A projection factor is everywhere zero in the cylinder 
+over the cell (2,2,2,1) of positive dimension.  The McCallum projection 
+may not be valid.
+Warning! Some 5-level projection factor is acting as a 
+delineating polynomial for another!  CAD Simplification does not
+take this into account!
+WARNING! A projection factor is everywhere zero in the cylinder 
+over the cell (2,2,2,3) of positive dimension.  The McCallum projection 
+may not be valid.
+Warning! Some 3-level projection factor is acting as a 
+delineating polynomial for another!  CAD Simplification does not
+take this into account!
+Warning! Some 3-level projection factor is acting as a 
+delineating polynomial for another!  CAD Simplification does not
+take this into account!
+
+
+Failure occurred in:    AFUPGCD
+Reason for the failure: Prime list exhausted
+
+
+
+Now the FAIL handler is aborting the program ...

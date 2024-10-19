@@ -1,0 +1,17 @@
+[FIS-ex-3]
+(l,z,r,s1,c1,s2,c2)
+7
+[[r-c1+l (s1 s2-c1 c2)=0]/\[z-s1-l (s1 c2+s2 c1)=0]/\[s1^2+c1^2-1=0]/\[s2^2+c2^2-1=0]].
+prop-eqn-const
+go
+d-level-f 7
+d-level-f 5
+eqn-const-l (A_7,1)
+eqn-const-l (A_7,2)
+eqn-const-l (A_7,3)
+eqn-const-l (A_5,1)
+go
+go
+d-number-leaf-cells
+d-pscad ()
+finish

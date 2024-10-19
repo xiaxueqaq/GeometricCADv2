@@ -1,0 +1,14 @@
+[FIS-ex-4]
+(x,y,z)
+3
+[[x^2 + y^2 z + z^3 = 0] /\ [3 x^2 + 3 y^2 + z^2 -1 =0] /\ [x^2 + z^2 - y^3 (y-1)^3 < 0]].
+prop-eqn-const
+go
+d-level-f 3
+eqn-const-l (A_3,1)
+eqn-const-l (A_3,2)
+go
+go
+d-number-leaf-cells
+d-pscad ()
+finish

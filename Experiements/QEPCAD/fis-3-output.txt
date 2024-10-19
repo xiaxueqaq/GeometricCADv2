@@ -1,0 +1,54 @@
+=======================================================
+                Quantifier Elimination                 
+                          in                           
+            Elementary Algebra and Geometry            
+                          by                           
+      Partial Cylindrical Algebraic Decomposition      
+                                                       
+      Version B 1.74, Thu Feb 25 14:48:53 EST 2021
+                                                       
+                          by                           
+                       Hoon Hong                       
+                  (hhong@math.ncsu.edu)                
+                                                       
+With contributions by: Christopher W. Brown, George E. 
+Collins, Mark J. Encarnacion, Jeremy R. Johnson        
+Werner Krandick, Richard Liska, Scott McCallum,        
+Nicolas Robidoux, and Stanly Steinberg                 
+=======================================================
+Enter an informal description  between '[' and ']':
+[FIS-ex-3]Enter a variable list:
+(l,z,r,s1,c1,s2,c2)Enter the number of free variables:
+7Enter a prenex formula:
+[[r-c1+l (s1 s2-c1 c2)=0]/\[z-s1-l (s1 c2+s2 c1)=0]/\[s1^2+c1^2-1=0]/\[s2^2+c2^2-1=0]].
+
+=======================================================
+
+Before Normalization >
+prop-eqn-const
+Before Normalization >
+go
+Before Projection (c2) >
+d-level-f 7A_7,1= input
+       = l c1 c2 - l s1 s2 + c1 - r
+A_7,2  = input
+       = l s1 c2 + l c1 s2 + s1 - z
+A_7,3  = input
+       = c2^2 + s2^2 - 1
+
+
+Before Projection (c2) >
+d-level-f 5A_5,1= input
+       = c1^2 + s1^2 - 1
+
+
+Before Projection (c2) >
+eqn-const-l (A_7,1)
+Before Projection (c2) >
+eqn-const-l (A_7,2)
+Before Projection (c2) >
+eqn-const-l (A_7,3)
+Before Projection (c2) >
+eqn-const-l (A_5,1)
+Before Projection (c2) >
+go

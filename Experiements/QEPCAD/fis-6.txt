@@ -1,0 +1,15 @@
+[fis-6]
+(a,b,x,y,z)
+5
+[[x y + a x z + y z - 1 = 0] /\ [x y z + x z + x y = b] /\ [x z+ y z - a z - x - y - 1 = 0]].
+prop-eqn-const
+go
+d-level-f 5
+eqn-const-l (A_5,1)
+eqn-const-l (A_5,2)
+eqn-const-l (A_5,3)
+go
+go
+d-number-leaf-cells
+d-pscad ()
+finish

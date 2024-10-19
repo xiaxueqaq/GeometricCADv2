@@ -1,0 +1,67 @@
+=======================================================
+                Quantifier Elimination                 
+                          in                           
+            Elementary Algebra and Geometry            
+                          by                           
+      Partial Cylindrical Algebraic Decomposition      
+                                                       
+      Version B 1.74, Thu Feb 25 14:48:53 EST 2021
+                                                       
+                          by                           
+                       Hoon Hong                       
+                  (hhong@math.ncsu.edu)                
+                                                       
+With contributions by: Christopher W. Brown, George E. 
+Collins, Mark J. Encarnacion, Jeremy R. Johnson        
+Werner Krandick, Richard Liska, Scott McCallum,        
+Nicolas Robidoux, and Stanly Steinberg                 
+=======================================================
+Enter an informal description  between '[' and ']':
+[FIS-7]Enter a variable list:
+(x4,x1,x3,x2,x0)Enter the number of free variables:
+5Enter a prenex formula:
+[x0 x2 - 1 = 0 /\ x0^2 - 2 x0 x1 + x2^2 - 2 x2 x3 - x4 = 0 /\ -16 x1 x4^2 - 800 x3^3 - 1240 x3^2 x4 - 408 x3 x4^2 - 40 x4^3 + 240 x1 x3 - 532 x1 x4 - 17720 x3^2 - 6214 x3 x4 - 550 x4^2 - 4480 x1 + 25240 x3 + 5695 x4 + 1050 = 0 /\ 32 x1^2 + 168 x1 x3 + 40 x1 x4 + 8 x3^2 + 20 x3 x4 + 4 x4^2 - 270 x1 - 390 x3 - 105 x4 + 450 = 0 /\ 320 x1 x3 x4 + 32 x1 x4^2 + 16 x3 x4^2 + 8320 x1 x3 + 264 x1 x4 + 240 x3^2 - 372 x3 x4 - 140 x4^2 - 14840 x1 - 23380 x3 - 2575 x4 + 36750 =0].
+
+=======================================================
+
+Before Normalization >
+prop-eqn-const
+Before Normalization >
+go
+Before Projection (x0) >
+d-level-f 5A_5,1= input
+       = x2 x0 - 1
+A_5,2  = input
+       = x0^2 - 2 x1 x0 + x2^2 - 2 x3 x2 - x4
+
+
+Before Projection (x0) >
+d-level-f 3A_3,1= input
+       = 800 x3^3 + 1240 x4 x3^2 + 17720 x3^2 - 240 x1 x3 + 408 x4^2 x3 + 6214 x4 x3 - 25240 x3 + 16 x4^2 x1 + 532 x4 x1 + 4480 x1 + 40 x4^3 + 550 x4^2 - 5695 x4 - 1050
+A_3,2  = input
+       = 8 x3^2 + 168 x1 x3 + 20 x4 x3 - 390 x3 + 32 x1^2 + 40 x4 x1 - 270 x1 + 4 x4^2 - 105 x4 + 450
+A_3,3  = input
+       = 240 x3^2 + 320 x4 x1 x3 + 8320 x1 x3 + 16 x4^2 x3 - 372 x4 x3 - 23380 x3 + 32 x4^2 x1 + 264 x4 x1 - 14840 x1 - 140 x4^2 - 2575 x4 + 36750
+
+
+Before Projection (x0) >
+eqn-const-l (A_5,1)
+Before Projection (x0) >
+eqn-const-l (A_5,2)
+Before Projection (x0) >
+eqn-const-l (A_3,1)
+Before Projection (x0) >
+eqn-const-l (A_3,2)
+Before Projection (x0) >
+eqn-const-l (A_3,3)
+Before Projection (x0) >
+go
+Before Choice >
+go
+
+Failure occurred in:    AFUPGCD
+Reason for the failure: Prime list exhausted
+
+
+
+Now the FAIL handler is aborting the program ...

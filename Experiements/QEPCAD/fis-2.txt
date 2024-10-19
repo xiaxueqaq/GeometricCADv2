@@ -1,0 +1,16 @@
+[FIS-2]
+(s,x,y,z)
+4
+[[1/200 x s (1 - 1/400 x) + y s (1 - 1/400 x) - 35/2 x = 0] /\ [250 x s (1 - 1/600 y) (z + 3/250) - 55/2 y = 0] /\ [500 (y + 1/20 x) (1 - 1/700 z) - 5 z = 0]].
+prop-eqn-const
+go
+d-level-f 4
+d-level-f 3
+eqn-const-l (A_4,1)
+eqn-const-l (A_4,2)
+eqn-const-l (A_3,1)
+go
+go
+d-number-leaf-cells
+d-pscad ()
+finish

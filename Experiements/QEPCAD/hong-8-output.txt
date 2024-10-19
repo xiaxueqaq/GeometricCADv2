@@ -1,0 +1,32 @@
+=======================================================
+                Quantifier Elimination                 
+                          in                           
+            Elementary Algebra and Geometry            
+                          by                           
+      Partial Cylindrical Algebraic Decomposition      
+                                                       
+      Version B 1.74, Thu Feb 25 14:48:53 EST 2021
+                                                       
+                          by                           
+                       Hoon Hong                       
+                  (hhong@math.ncsu.edu)                
+                                                       
+With contributions by: Christopher W. Brown, George E. 
+Collins, Mark J. Encarnacion, Jeremy R. Johnson        
+Werner Krandick, Richard Liska, Scott McCallum,        
+Nicolas Robidoux, and Stanly Steinberg                 
+=======================================================
+Enter an informal description  between '[' and ']':
+[Hong-8]Enter a variable list:
+(x0,x1,x2,x3,x4,x5,x6,x7)Enter the number of free variables:
+8Enter a prenex formula:
+[[x0^2+x1^2+x2^2+x3^2+x4^2+x5^2+x6^2+x7^2<1]/\[x0 x1 x2 x3 x4 x5 x6 x7>1]].
+
+=======================================================
+
+Before Normalization >
+go
+Before Projection (x7) >
+go
+Before Choice >
+go
